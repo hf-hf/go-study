@@ -14,7 +14,7 @@ func (p person) fullName() {
 }
 
 /**
-Defer 不仅限于函数。调用延迟方法也是完全合法的。让我们编写一个小程序来测试它。
+Defer 不仅限于函数。调用延迟方法也是完全合法的。
 */
 func main() {
 	p := person{
