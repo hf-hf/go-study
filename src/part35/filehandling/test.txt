@@ -1,0 +1,1 @@
+Contents of file: Hello World. Welcome to file handling in Go.
