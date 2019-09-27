@@ -21,7 +21,8 @@ func main() {
 }
 
 func QR(w http.ResponseWriter, req *http.Request) {
-	templ.Execute(w, req.FormValue("s"))
+	tmp := req.FormValue("s")
+	templ.Execute(w, tmp)
 }
 
 const templateStr = `
