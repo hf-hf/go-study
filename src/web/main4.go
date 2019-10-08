@@ -70,6 +70,7 @@ var (
 func main() {
 	flag.StringVar(&port, "port", ":8080", "port to listen")
 	flag.Parse()
+
 	router := mux.NewMuxHandler()
 	router.Handle("/hello/golang/", &BaseHander{})
 	router.HandleFunc("/hello/world", func(resp http.ResponseWriter, req *http.Request) {
